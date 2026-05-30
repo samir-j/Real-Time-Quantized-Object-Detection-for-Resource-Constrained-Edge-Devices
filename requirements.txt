@@ -1,0 +1,19 @@
+# PPE Edge Detection — Dependencies
+# Install: pip install -r requirements.txt
+
+# Core ML
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# ONNX Export & Runtime
+onnx>=1.14.0
+onnxruntime>=1.16.0       # CPU-only; use onnxruntime-gpu for CUDA
+onnxsim>=0.4.33
+
+# Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Dataset Download (optional — only needed for download_dataset.py)
+roboflow>=1.1.0

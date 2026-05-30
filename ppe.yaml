@@ -1,0 +1,15 @@
+# PPE Safety Detection Dataset Configuration
+# Dataset: Hard Hat Workers (Roboflow Universe)
+# Source: https://universe.roboflow.com/joseph-nelson/hard-hat-workers/dataset/12
+# Classes: head (no helmet), helmet (2 classes)
+
+path: ./data/ppe_dataset          # dataset root dir (relative to train.py)
+train: train/images                # train images (relative to 'path')
+val: valid/images                  # val images (relative to 'path')
+test: test/images                  # test images (relative to 'path')
+
+# Classes (must match Roboflow export exactly)
+nc: 2
+names:
+  0: head
+  1: helmet
